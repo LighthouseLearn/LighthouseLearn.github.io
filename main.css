@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before {
+  margin: 3;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%; 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+
+.container {
+    display: grid;
+    width: 72%;
+    margin: 2rem auto; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr 300px 300px 300px;
+    grid-template-areas:
+      "header"
+      "projects"
+      "experience"
+      "about"
+      "contact";
+     
+  
+}
+
+  .header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Arial", sans-serif;
+    justify-self: center;
+    position: fixed;
+    background: white;
+    padding-bottom: 0.5em;
+    width: 70%;
+    bottom: 0;
+  }
+    
+  .header a {
+      color: grey;
+      justify-self: center;
+      padding: 5px 20px 5px 20px;
+  }
+  a.top {
+    color: #4D00FF;
+  }
+  a {
+    text-decoration: none;
+    
+  }
+  a:hover {
+    opacity: .6;
+  }
+
+  h1 {
+    width: 50vw;
+    font-size: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    
+  }
+
+section {
+  margin: 1rem;
+}
+  
+.cards {
+    max-width: 1200px;
+    margin:  auto;
+    display: grid;
+    grid-gap: 2rem;
+
+  }
+  .card {
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+    height: auto;
+    max-width: 100%;
+    
+    
+    display: grid;
+    
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "imga texta";
+  }
+
+  .text1 {
+    padding-right: 20px;
+    margin-left: -15px;
+  }
+  .card__img {
+    
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  
+    display: block; 
+    
+  }
+
+  .card__item--1 {
+    
+    grid-area: imga;
+  }
+  .text1 {
+    grid-area: texta;
+  }
+
+
+  
+/*
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1.5rem; 
+  font-size: 2.2rem;
+  text-align: center;
+  grid-template-areas:
+  "a1 a1 a2 a2 a3 a3 a3 a3"
+  "a1 a1 a2 a2 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a7 a7 a7 a7 a8 a8 a9 a9"
+  "a7 a7 a7 a7 a8 a8 a9 a9"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a11 a11 a11 a11 a12 a12 a12 a12"
+  "a11 a11 a11 a11 a12 a12 a12 a12"
+  "a11 a11 a11 a11 a12 a12 a12 a12";
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+    grid-area: a1;
+}
+.gallery__item--2 {
+    grid-area: a2;
+}
+.note1 {
+    font-size: calc(1.2rem + 1.2vw);
+    grid-area: a3;
+    
+}
+.gallery__item--4 {
+    grid-area: a4;
+}
+.gallery__item--5 {
+    grid-area: a5;
+}
+.gallery__item--6 {
+    grid-area: a6;
+}
+
+.note2 {
+    background-color: rgb(231, 228, 203);
+    color: rgb(17, 6, 6);
+    font-size: calc(1.2rem + 1.2vw);
+    grid-area: a7;
+    
+}
+
+.gallery__item--8 {
+    grid-area: a8;
+}
+.gallery__item--9 {
+    grid-area: a9;
+}
+.gallery__item--10 {
+    grid-area: a10;
+}
+.gallery__item--11 {
+    grid-area: a11;
+}
+.gallery__item--12 {
+    grid-area: a12;
+}
+
