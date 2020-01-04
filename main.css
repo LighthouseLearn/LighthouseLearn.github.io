@@ -25,11 +25,11 @@ body {
     width: 72%;
     margin: 2rem auto; 
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 1fr 300px 300px 300px;
+    grid-template-rows: 300px 1fr 300px /*300px*/ 300px;
     grid-template-areas:
       "header"
       "projects"
-      "experience"
+     /* "experience" */
       "about"
       "contact";
      
@@ -38,7 +38,7 @@ body {
 
   .header{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-family: "Arial", sans-serif;
     justify-self: center;
     position: fixed;
@@ -68,7 +68,7 @@ body {
     width: 65vw;
     font-size: 1.5rem;
     margin-top: 50px;
-    padding-left: 15vw;
+    padding-left: 5vw;
     
   }
 
@@ -84,7 +84,7 @@ section {
 .top {
   margin-top: -32px;
   background-color: aliceblue;
-  width: 135%;
+  width: 100%;
   height:auto;
   justify-self: center;
 }
@@ -125,7 +125,7 @@ section {
   }
   .text1 {
     grid-area: texta;
-    padding-right: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     margin-left: 20px;
     padding-bottom: 20px;
@@ -146,7 +146,7 @@ section {
       margin-left: 40px;
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 500px) {
 
     .container {
       width: 85vw;
@@ -156,10 +156,6 @@ section {
     }
     .header {
       width: 100%;
-    }
-
-    .header a {
-      padding: 5px 15px;
     }
   }
   
