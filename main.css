@@ -42,16 +42,18 @@ body {
     font-family: "Arial", sans-serif;
     justify-self: center;
     position: fixed;
-    background: white;
+    background: whitesmoke;
     padding-bottom: 0.5em;
-    width: 70%;
+    width: 72%;
     bottom: 0;
   }
     
   .header a {
       color: grey;
       justify-self: center;
-      padding: 5px 20px 5px 20px;
+      padding: 5px 0px 5px 0px;
+      justify-content: center;
+      justify-items: center;
   }
   a.top {
     color: #4D00FF;
@@ -97,7 +99,7 @@ section {
 
   }
   .card {
-    background-color:green;
+    background-color:rgb(25, 177, 25);
     color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     height: 100%;
@@ -155,7 +157,86 @@ section {
       font-size: 1.3rem;
     }
     .header {
-      width: 100%;
+      width: 85%;
     }
   }
   
+/*
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1.5rem; 
+  font-size: 2.2rem;
+  text-align: center;
+  grid-template-areas:
+  "a1 a1 a2 a2 a3 a3 a3 a3"
+  "a1 a1 a2 a2 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a4 a4 a4 a4 a3 a3 a3 a3"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a5 a5 a5 a5 a6 a6 a6 a6"
+  "a7 a7 a7 a7 a8 a8 a9 a9"
+  "a7 a7 a7 a7 a8 a8 a9 a9"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a7 a7 a7 a7 a10 a10 a10 a10"
+  "a11 a11 a11 a11 a12 a12 a12 a12"
+  "a11 a11 a11 a11 a12 a12 a12 a12"
+  "a11 a11 a11 a11 a12 a12 a12 a12";
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+    grid-area: a1;
+}
+.gallery__item--2 {
+    grid-area: a2;
+}
+.note1 {
+    font-size: calc(1.2rem + 1.2vw);
+    grid-area: a3;
+    
+}
+.gallery__item--4 {
+    grid-area: a4;
+}
+.gallery__item--5 {
+    grid-area: a5;
+}
+.gallery__item--6 {
+    grid-area: a6;
+}
+
+.note2 {
+    background-color: rgb(231, 228, 203);
+    color: rgb(17, 6, 6);
+    font-size: calc(1.2rem + 1.2vw);
+    grid-area: a7;
+    
+}
+
+.gallery__item--8 {
+    grid-area: a8;
+}
+.gallery__item--9 {
+    grid-area: a9;
+}
+.gallery__item--10 {
+    grid-area: a10;
+}
+.gallery__item--11 {
+    grid-area: a11;
+}
+.gallery__item--12 {
+    grid-area: a12;
+}
+
