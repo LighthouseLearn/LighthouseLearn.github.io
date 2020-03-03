@@ -62,9 +62,6 @@ body {
     text-decoration: none;
     
   }
-  a:hover {
-    opacity: .6;
-  }
 
   h1 {
     width: 65vw;
