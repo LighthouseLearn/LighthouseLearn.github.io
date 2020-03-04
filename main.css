@@ -25,7 +25,7 @@ body {
     width: 72%;
     margin: 2rem auto; 
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 1fr 300px /*300px*/ 300px;
+    grid-template-rows: 300px 1fr 350px /*300px*/ 300px;
     grid-template-areas:
       "header"
       "projects"
@@ -78,7 +78,7 @@ body {
 
   
 
-section {
+.section {
   margin: 1rem;
 }
 
@@ -141,16 +141,37 @@ section {
       "texta";
 
     }
+    
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 1fr 400px /*300px*/ 300px;
+      grid-template-areas:
+      "header"
+      "projects"
+     /* "experience" */
+      "about"
+      "contact";
+    }
 
     .text1 {
       padding-right: 40px;
       margin-left: 40px;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
 
     .container {
       width: 85vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 1fr 600px /*300px*/ 300px;
+      grid-template-areas:
+      "header"
+      "projects"
+     /* "experience" */
+      "about"
+      "contact";
+
     }
     h1 {
       font-size: 1.3rem;
