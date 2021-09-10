@@ -176,6 +176,12 @@ body {
     h1 {
       font-size: 1.3rem;
     }
+    h4 {
+      width: 70vw;
+      padding-left: 5vw;
+    
+  }
+      
     .header {
       width: 85%;
     }
